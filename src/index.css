@@ -26,4 +26,8 @@
   .fake-link{
     @apply hover:underline cursor-pointer
   }
+
+  .menu-sidebar{
+    @apply border bg-[#ECF9FD] text-slate-400 text-xl p-1
+  }
 }
