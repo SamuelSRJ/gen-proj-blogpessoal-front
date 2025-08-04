@@ -15,7 +15,7 @@ function CardPostagens({ postagem }: CardPostagensProps) {
           className="h-12 rounded-full"/>
         <h3 className="text-lg font-bold text-center uppercase">{postagem.usuario?.nome}</h3>
       </div>
-      <div className="p-4 bg-[#fff3db]" style={{ backgroundImage: "url('https://resources.blogblog.com/blogblog/data/scribe/bg_paper_mid.jpg')" }}>
+      <div className="p-4 bg-white">
         <h4 className="text-lg font-semibold uppercase">{postagem.titulo}</h4>
         <p>{postagem.texto}</p>
         <p>Tema: {postagem.tema?.descricao}</p>

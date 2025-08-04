@@ -1,6 +1,29 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
 
-/* @theme {
-  --font-sans: "Bitcount Prop Single"
-} */
+@theme {
+  --font-sans: "Lato"
+}
+
+@layer utilities {
+  .stripe-color-2 {
+    @apply bg-[#DCEEFD]
+  }
+
+  .stripe-color-1 {
+    @apply bg-[#ECF9FD]
+  }
+
+  .stripe-color-2-left {
+    @apply bg-[#DCEEFD] text-slate-400 text-right px-2
+  }
+
+  .stripe-color-1-left {
+    @apply bg-[#ECF9FD] text-slate-400 text-right px-2
+  }
+
+  .fake-link{
+    @apply hover:underline cursor-pointer
+  }
+}

@@ -16,7 +16,7 @@ import Perfil from './pages/perfil/Perfil'
 function App() {
   return (
     <>
-      <div className=''>
+      <div className='bg-linear-to-b from-[#D9E6F6] from-75% to-[#739DCF]'>
         <AuthProvider>
           <BrowserRouter>
             <Navbar />

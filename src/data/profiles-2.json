@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "nome": "Samuel de Souza",
+    "sexo": "masculino",
+    "relacionamento": "solteiro",
+    "aniversario": "28 de novembro",
+    "idade": "",
+    "interesse": "tendencias, tecnologia e musicas",
+    "sobre": "Who am i?",
+    "filhos": 0,
+    "humor": "troll",
+    "gostomusical": "musica classica",
+    "bebo": "pouco",
+    "estilo": "style",
+    "animais": 1,
+    "cidade": "Campinas/SP",
+    "atividades": "tudo quase no prazo",
+    "recados": 14,
+    "fotos": 3,
+    "videos": 0,
+    "fas": 2,
+    "amigos": [
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-linus.jpg",
+        "name": "Amigo 1 (742)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-bob.jpeg",
+        "name": "Amigo 2 (342)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-gandalf.webp",
+        "name": "Amigo 3 (563)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-voldemort.jpg",
+        "name": "Amigo 4 (?)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-goku.jpeg",
+        "name": "Amigo 5 (532)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-darth.jpeg",
+        "name": "Amigo 6 (249)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-dori.jpeg",
+        "name": "Amigo 7 (741)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/amg-lea.jpg",
+        "name": "Amigo 8 (986)"
+      },
+      {
+        "pic": "https://github.com/SamuelSRJ.png",
+        "name": "Amigo 9 (245)"
+      }
+    ],
+    "comunidades": [
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-java.png",
+        "name": "Com 1 (666)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-tendencias.png",
+        "name": "Com 2 (42341)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-reporter.png",
+        "name": "Com 3 (13850)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-recado.png",
+        "name": "Com 4 (24938)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-indian.png",
+        "name": "Com 5 (19383277)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-gritaria.png",
+        "name": "Com 6(6666)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-formandos.jpg",
+        "name": "Com 7 (40)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-cubo.png",
+        "name": "Com 8 (31384)"
+      },
+      {
+        "pic": "https://ik.imagekit.io/samuelsrj/generation/com-cafe.jpg",
+        "name": "Com 9 (53142)"
+      }
+    ]
+  }
+]
