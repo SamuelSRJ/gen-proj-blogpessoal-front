@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useContext, useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { AuthContext } from "../../../contexts/AuthContext"
 import type Postagem from "../../../models/Postagem"
 import { buscar } from "../../../services/Service"
 import CardPostagens from "../cardpostagens/CardPostagens"
+import CardPostagens2 from "../cardpostagens/CardPostagens2"
 import { DNA } from "react-loader-spinner"
 
 function ListaPostagens() {
@@ -53,9 +55,9 @@ function ListaPostagens() {
       )}
       <div className="flex justify-center w-full my-4 ">
         <div className="container flex flex-col mx-2">
-          <div className="container mx-auto my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="container mx-auto my-4 grid grid-cols-1 w-1/2 gap-4">
             {postagens.map((postagem) => (
-              <CardPostagens key={postagem.id} postagem={postagem} />
+              <CardPostagens2 key={postagem.id} postagem={postagem} />
             ))}
           </div>
         </div>

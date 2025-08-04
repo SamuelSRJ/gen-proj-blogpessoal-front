@@ -5,28 +5,33 @@ interface CardPostagensProps {
   postagem: Postagem
 }
 
-function CardPostagens({ postagem }: CardPostagensProps) {
+function CardPostagens2({ postagem }: CardPostagensProps) {
   return (
     // bg-white p-2 border border-white rounded-2xl shadow-xl
     <div  className="border border-white rounded-2xl shadow-xl flex flex-col overflow-hidden justify-between ">
-      <div className="flex w-full bg-[#739DCF] py-2 px-4 items-center gap-4">
-        <img 
+      <div className="flex w-full bg-white py-2 px-4 items-center gap-4">
+        <div>
+          <img 
           src={postagem.usuario?.foto} 
           alt={postagem.usuario?.nome} 
           className="h-12 rounded-xl"/>
-        <h3 className="text-lg font-bold text-center uppercase">{postagem.usuario?.nome}</h3>
+        </div>
+        <div>
+          <h3 className="text-lg font-bold text-left uppercase">{postagem.usuario?.nome}</h3>
+          <p>
+            {new Intl.DateTimeFormat(undefined, {
+              dateStyle: "medium",
+              timeStyle: "short"
+            }).format(new Date(postagem.data))}
+          </p>
+        </div>
       </div>
+      <hr className="text-slate-300" />
       <div className="p-4 bg-white">
         <h4 className="text-lg font-semibold uppercase">{postagem.titulo}</h4>
         <p>{postagem.texto}</p>
         <p>Tema: {postagem.tema?.descricao}</p>
           <img src="https://ik.imagekit.io/samuelsrj/generation/post-tendencia.png" className="w-full my-2" alt="" />
-        <p>
-          Data: {new Intl.DateTimeFormat(undefined, {
-            dateStyle: "full",
-            timeStyle: "medium"
-          }).format(new Date(postagem.data))}
-        </p>
       </div>
       {/* <div className="flex">
         <Link to={`/editarpostagem/${postagem.id}`} 
@@ -38,12 +43,12 @@ function CardPostagens({ postagem }: CardPostagensProps) {
         </Link>
       </div> */}
       <div className="flex">
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2">Curtir</button>
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2">Comentar</button>
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2">Compartilhar</button>
+          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Curtir</button>
+          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Comentar</button>
+          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Compartilhar</button>
       </div>
     </div>
   )
 }
 
-export default CardPostagens
+export default CardPostagens2
