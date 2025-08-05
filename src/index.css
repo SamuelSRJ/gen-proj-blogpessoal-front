@@ -30,4 +30,8 @@
   .menu-sidebar{
     @apply border bg-[#ECF9FD] text-slate-400 text-xl p-1
   }
+
+  .botao-linkedin {
+    @apply w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer
+  }
 }

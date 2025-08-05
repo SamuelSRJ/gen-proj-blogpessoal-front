@@ -43,9 +43,9 @@ function CardPostagens2({ postagem }: CardPostagensProps) {
         </Link>
       </div> */}
       <div className="flex">
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Curtir</button>
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Comentar</button>
-          <button className="w-full border border-slate-200 text-slate-800 bg-white hover:bg-slate-200 flex items-center justify-center py-2 cursor-pointer">Compartilhar</button>
+          <button className="botao-linkedin">Curtir</button>
+          <button className="botao-linkedin">Comentar</button>
+          <button className="botao-linkedin">Compartilhar</button>
       </div>
     </div>
   )

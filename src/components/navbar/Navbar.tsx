@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, type ReactNode } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { BooksIcon, FolderSimplePlusIcon, HouseIcon, UserIcon } from "@phosphor-icons/react";
@@ -15,8 +15,10 @@ function Navbar() {
     navigate("/")
   }
 
-  return (
-    <>
+  let navbarComponent: ReactNode
+
+  if(usuario.token !== "") {
+    navbarComponent= (
       <div className="w-full flex justify-center bg-[#739DCF] text-white">
         <div className="container flex justify-between text-lg">
           <Link to="/home" className="text-4xl p-2 font-bold text-pink-600 bg-white">Orkut<span className="text-slate-400 -rotate-90 text-sm items-center">BETA</span></Link>
@@ -32,6 +34,12 @@ function Navbar() {
           </div>
         </div>
       </div>
+    )
+  }
+
+  return (
+    <>
+      {navbarComponent}
     </>
   )
 }
