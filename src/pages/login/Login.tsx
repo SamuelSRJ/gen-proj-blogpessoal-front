@@ -3,7 +3,7 @@ import { RotatingLines } from 'react-loader-spinner';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 import type UsuarioLogin from '../../models/UsuarioLogin';
-import './Login.css';
+import './login.css';
 
 function Login() {
 
